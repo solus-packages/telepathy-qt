@@ -1,0 +1,50 @@
+<PISI>
+    <Source>
+        <Name>telepathy-qt</Name>
+        <Packager>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
+        </Packager>
+        <License>LGPL-2.1</License>
+        <PartOf>programming.library</PartOf>
+        <Summary xml:lang="en">Telepathy Qt bindings</Summary>
+        <Description xml:lang="en">Telepathy Qt bindings
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>telepathy-qt</Name>
+        <Summary xml:lang="en">Telepathy Qt bindings</Summary>
+        <Description xml:lang="en">Telepathy Qt bindings
+</Description>
+        <PartOf>programming.library</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib/lib*.so.*</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>telepathy-qt-devel</Name>
+        <Summary xml:lang="en">Development files for telepathy-qt</Summary>
+        <Description xml:lang="en">Telepathy Qt bindings
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">telepathy-qt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib/cmake/</Path>
+            <Path fileType="library">/usr/lib/lib*.so</Path>
+            <Path fileType="data">/usr/lib/pkgconfig/*.pc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-08-27</Date>
+            <Version>0.9.7</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
+        </Update>
+    </History>
+</PISI>

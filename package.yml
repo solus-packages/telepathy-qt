@@ -1,0 +1,21 @@
+name       : telepathy-qt
+version    : 0.9.7
+release    : 1
+source     :
+    - https://github.com/TelepathyIM/telepathy-qt/archive/telepathy-qt-0.9.7.tar.gz : 213f0e0d122d10e8a98a6b573874271fa23269d7831ea9f14dc6cfe6ce6db209
+license    : LGPL-2.1
+component  : programming.library
+summary    : Telepathy Qt bindings
+description: |
+    Telepathy Qt bindings
+builddeps  :
+    - pkgconfig(gl)
+    - pkgconfig(Qt5Core)
+    - pkgconfig(telepathy-farstream)
+    - pkgconfig(telepathy-glib)
+setup      : |
+    %cmake .
+build      : |
+    %make
+install    : |
+    %make_install
